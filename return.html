@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Reference - Return</title>
+  </head>
+  <body>
+    <header>
+        <h1><a href="/">JavaScript Reference</a></h1>
+        <h2>Return</h2>
+    </header>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      The return statement stops the execution of a function and returns a value
+      from that function.</p>
+    <p>The return statement ends function execution and specifies a value to be
+      returned to the function caller.</p>
+    <p id="course-lesson-description" class=" ">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <span class="suggested-highlight first-time"><span class="suggested-highlight first-time">When
+          you have a <code>return</code> in your function, this will be the
+          last line of code executed in that function</span></span>.</p>
+    <p class=" "> <strong><em>Which means if you have a <code><span class="suggested-highlight first-time">console.log</span></code>
+          on the line after the <code>return</code>, it will not be executed.
+          Thus you will not see its result.</em></strong></p>
+    <p id="course-lesson-description" class=" ">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      So the take away is that console.log does NOT replace <code>return</code>.
+      You can have both, the console.log is optional and useful for debugging,
+      but you really need to have the <code>return</code></p>
+    <h3 class=" ">Examples of Mistakes</h3>
+    <p><b>Forgetting return</b> = result is undefined. Even though you will see
+      8 printed in the Console, the function double is missing a return this it
+      will return nothing (more specifically undefined).</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #546e7a;font-style: italic;">// THIS IS WRONG</span></div><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;">)</span></div><div><span style="color: #89ddff;">}</span></div><br><div><span
+style="color: #c792ea;">let</span><span style="color: #eeffff;"> </span><span style="color: #eeffff;">result</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">4</span><span style="color: #eeffff;">) </span><span style="color: #546e7a;font-style: italic;">// result is undefined</span></div></div>
+    <p></p>
+    <p id="course-lesson-description" class=" ">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      This also does not work, even though you will see <code>8</code> printed
+      in the Console.<br>
+      That's because <code>return <span class="suggested-highlight first-time">console.log</span></code>
+      will return undefined because the result of console.log is <code>undefined</code>.</p>
+    <p></p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #546e7a;font-style: italic;">// THIS IS WRONG</span></div><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;">)</span></div><div><span style="color: #89ddff;">}</span></div><br><div><span
+style="color: #c792ea;">let</span><span style="color: #eeffff;"> </span><span style="color: #eeffff;">result</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">4</span><span style="color: #eeffff;">) </span><span style="color: #546e7a;font-style: italic;">// result is undefined</span></div></div>
+    <p></p>
+    <p>&nbsp;The function WORKS but we don't see the console.log becayse it is
+      placed after the <code>return</code></p>
+    <p class=" ">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #546e7a;font-style: italic;">// The function WORKS but we don't see the console.log</span></div><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">number</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">2</span><span style="color: #f07178;"> </span><span style="color: #546e7a;font-style: italic;">// "result" of the function, will exit the function</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;">) </span><span style="color: #546e7a;font-style: italic;">// we don't see this</span></div><div><span
+style="color: #89ddff;">}</span></div><div><span style="color: #c792ea;">let</span><span
+style="color: #eeffff;"> </span><span style="color: #eeffff;">result</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">4</span><span style="color: #eeffff;">) </span><span style="color: #546e7a;font-style: italic;">// result is 8 - but nothing logged in the Console<br><br></span></div></div>
+    <p id="course-lesson-description" class=" ">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      Needs to be re-written. You need to swap the return and <span class="suggested-highlight first-time">console.log</span>
+      like this:</p>
+    <p class=" ">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;">)</span></div><div><span style="color: #f07178;">    </span><span
+style="color: #89ddff;font-style: italic;">return</span><span style="color: #f07178;"> </span><span
+style="color: #eeffff;">number</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span></div><div><span
+style="color: #89ddff;">}</span></div><div><span style="color: #c792ea;">let</span><span
+style="color: #eeffff;"> </span><span style="color: #eeffff;">result</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">4</span><span style="color: #eeffff;">) </span><span style="color: #546e7a;font-style: italic;">// result is 8 - we also see 8 in the Console<br><br></span></div></div>
+    <p class=" "></p>
+    <p class=" "><br>
+    </p>
+    <h3 class=" ">Sample Usage</h3>
+    <p>With every function you write, there are many ways on how to call that
+      function. </p>
+    <p class=" ">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">sum</span><span style="color: #89ddff;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span style="color: #eeffff;">b</span><span
+style="color: #89ddff;">)</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">a</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">+</span><span style="color: #f07178;"> </span><span style="color: #eeffff;">b</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">// Sample usage (do not modify)</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">sum</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">3</span><span style="color: #89ddff;">,</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">5</span><span style="color: #eeffff;">)) </span><span
+style="color: #546e7a;font-style: italic;">// will log 8 on the console</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">sum</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">4</span><span style="color: #89ddff;">,</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">1</span><span style="color: #eeffff;">)) </span><span
+style="color: #546e7a;font-style: italic;">// will log 5 on the console</span></div></div>
+    <p class=" "></p>
+    <h3 class=" ">Beware of hardcoding!!!</h3>
+    <p><br>
+      We have sum(3, 5) as a sample usage but that does NOT mean that sum should
+      always return 8. No! Beware of hardcoding your answer.<br>
+      <br>
+      You should still use variables and not rely on the actual values of these
+      variables.</p>
+    <p>This way the function is reusable over and over again.</p>
+    <p>Hardcoding is bad because it is inefficient. We want the function to be
+      reusable over and over again with different arguments. Thus parameters
+      should be symbolic rather than hardcoded values.</p>
+    <p>Here we ask for the character length of the different arguments from the
+      "name" parameter.<br>
+      It should return 3 for first name and 6 for second:</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">myFunction</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">name</span><span style="color: #89ddff;">)</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">{</span></div><div><span style="color: #f07178;">    </span><span
+style="color: #89ddff;font-style: italic;">return</span><span style="color: #f07178;">(</span><span
+style="color: #eeffff;">name</span><span style="color: #89ddff;">.</span><span style="color: #eeffff;">length</span><span
+style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">// Sample usage (do not modify)</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">myFunction</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">Sam</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">myFunction</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">Oakley</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))<br><br></span></div></div>
+    <p></p>
+    <p><br>
+    </p>
+    <p class=" "></p>
+    <p></p>
+    <script src="/js/2.2.return.js"></script>
+  </body>
+</html>

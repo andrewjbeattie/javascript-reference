@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Reference - Numbers</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JavaScript Reference</a></h1>
+      <h2>Numbers</h2>
+      <ul>
+        <li>&nbsp;&nbsp;&nbsp; 1</li>
+        <li>&nbsp;&nbsp;&nbsp; 2</li>
+        <li>&nbsp;&nbsp;&nbsp; -5</li>
+        <li>&nbsp;&nbsp;&nbsp; 3.5</li>
+        <li>&nbsp;&nbsp;&nbsp; 2000</li>
+        <li>&nbsp;&nbsp;&nbsp; 2019</li>
+        <li>&nbsp;&nbsp;&nbsp; -23.51</li>
+      </ul>
+      <p>All of these are examples of Numbers in JavaScript. It doesn't matter
+        if it's negative or positive, if it has a decimal (values after the .)
+        or not. We call them numbers.</p>
+      <p id="course-lesson-description" class=" "> </p>
+      <h3><span class="suggested-highlight ">Converting from number to string</span></h3>
+      <p><span class="suggested-highlight ">You can convert a number to string
+          by simply calling the <code>.toString()</code> method</span>.</p>
+      <p> </p>
+      <p></p>
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">convertNumberToString</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">number</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">toString</span><span
+style="color: #f07178;">()</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">convertNumberToString</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">42</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span
+style="color: #82aaff;">convertNumberToString</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">97</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">convertNumberToString</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">11</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;</span></div></div>
+      <p class=" "> </p>
+      <p id="course-lesson-description" class=" "> </p>
+      <h3><span class="suggested-highlight ">Converting from string to number</span></h3>
+      <p><span class="suggested-highlight ">In some scenarios, you'd like to
+          convert from a string to a number. For that, you'd have to use the <code>Number.parseInt</code>
+          method</span>.</p>
+      <p></p>
+      <p id="course-lesson-description" class=" "> <span class="">Note that the
+          <strong>Number</strong> in <strong>Number.parseInt("42")</strong> is
+          an Object in JavaScript that contains methods related to numbers, and
+          <strong>.parseInt()</strong> is one of them. <br>
+        </span></p>
+      <p class=" "><span class="">It's a method that you call on <strong>Number</strong>
+          to convert a string into a number</span>.</p>
+      <p class=" "> </p>
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">convertStringToNumber</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">string</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #ffcb6b;">Number</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">parseInt</span><span
+style="color: #f07178;">(</span><span style="color: #eeffff;">string</span><span
+style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">convertStringToNumber</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">42</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">convertStringToNumber</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">97</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">convertStringToNumber</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">11</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div></div>
+      <p class=" "></p>
+      <p id="course-lesson-description" class=" "><span class="suggested-highlight "><br>
+        </span></p>
+      <p class=" "><br>
+      </p>
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #ffcb6b;"><br>Number</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">parseInt</span><span style="color: #eeffff;">(</span><span
+style="color: #89ddff;">"</span><span style="color: #c3e88d;">42</span><span style="color: #89ddff;">"</span><span
+style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span style="color: #f78c6c;">10</span><span
+style="color: #eeffff;">)</span><span style="color: #89ddff;">;</span><span style="color: #eeffff;"> </span><span
+style="color: #546e7a;font-style: italic;">//42<br><br></span></div></div>
+      <p class=" "></p>
+      <p class=" "><span class="suggested-highlight "><br>
+        </span></p>
+      <p class=" "><span class="suggested-highlight ">The 2nd argument is called
+          <code>radix</code>, and it's an <strong>important</strong> argument
+          that you should always provide. A radix of 10 means that we're using
+          the <code>decimal</code> system. In short, humans use the decimal
+          system (because we have 10 fingers, from 0 to 9), and computers use
+          the binary system (on and off, 0s and 1s)</span>. </p>
+      <p>Unfortunately, parseInt <strong>does not default</strong> to a radix
+        of 10, thus it is recommended that you <strong>always specify it</strong>.
+        If you omit the radix, it may or may not work as you expect based on the
+        string you provided as a first argument.<br>
+        Thus to be safe, always specify the radix.</p>
+      <h3>Division Remainder</h3>
+      <p id="course-lesson-description" class=" ">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        You can also use the remainder operator <code>%</code> which returns t<span
+          style="color: #0000ee;"></span>he division remainder.</p>
+      <p id="course-lesson-description" class=" ">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <span class="suggested-highlight ">The remainder operator is often used
+          to check if a number is <strong>even</strong> or <strong>odd</strong>.
+          That's because even numbers are numbers that have a remainder of 0 </span>when
+        divided by two.</p>
+      <p class=" ">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      </p>
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">divisionRemainder</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">a</span><span style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">b</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">a</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">%</span><span style="color: #f07178;"> </span><span style="color: #eeffff;">b</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #89ddff;">}</span></div><br><div><span
+style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">divisionRemainder</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">7</span><span style="color: #89ddff;">,</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">2</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span
+style="color: #82aaff;">divisionRemainder</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">10</span><span style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span
+style="color: #f78c6c;">2</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;<br><br></span></div></div>
+      <p class=" "></p>
+      <p id="challenge-description">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        Complete the function <strong>isEven</strong> such that it returns true
+        when <strong>x</strong> is even:</p>
+      <p>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      </p>
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">isEven</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">x</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">x</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">%</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">===</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">0</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">isEven</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">4</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span
+style="color: #82aaff;">isEven</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">5</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">isEven</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">6</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+      <p></p>
+      <p>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      </p>
+      <p></p>
+      <p id="challenge-description">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        Complete the function <strong>isOdd</strong> such that it returns true
+        when <strong>x</strong> is odd:</p>
+      <p>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      </p>
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">isOdd</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">x</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">x</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">%</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">!=</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">0</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">isOdd</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">4</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span
+style="color: #82aaff;">isOdd</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">5</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">isOdd</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">6</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+      <p></p>
+      <p class=" "><br>
+      </p>
+      <p class=" "> </p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <script src="/js/2.4.numbers.js"></script> </header>
+  </body>
+</html>

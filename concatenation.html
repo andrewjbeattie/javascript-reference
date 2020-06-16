@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Reference - Concatenation</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JavaScript Reference</a></h1>
+      <h2>Concatenation</h2>
+    </header>
+    <p>Concatenation, in the context of programming, is the operation of joining
+      <br>
+      two strings together. The term"concatenation" literally means to merge two
+      <br>
+      things together. Also known as string concatenation.</p>
+    <p>First let's define the variables used in examples:</p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">firstname</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">John</span><span style="color: #89ddff;">'</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #c792ea;">const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">realage</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #f78c6c;">30</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <br>
+    <b>Concatenatation - The old way</b><br>
+    <br>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">My name is </span><span style="color: #89ddff;">'</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">+</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">firstname</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">+</span><span style="color: #eeffff;">  </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;"> and I am </span><span style="color: #89ddff;">'</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">+</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">realage</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p><b>String concatenation - The new way </b></p>
+    <p>With string concatenation you can use back-ticks and dollar signs and
+      curly braces:</p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #89ddff;">`</span><span
+style="color: #c3e88d;">My name is </span><span style="color: #89ddff;">${</span><span
+style="color: #eeffff;">firstname</span><span style="color: #89ddff;">}</span><span
+style="color: #c3e88d;"> and I am </span><span style="color: #89ddff;">${</span><span
+style="color: #eeffff;">realage</span><span style="color: #89ddff;">}`</span><span
+style="color: #eeffff;">)<br><br></span></div></div>
+    <br>
+    <br>
+    <h3>Interpolation</h3>
+    <p>Template strings support interpolation! This means you could write a
+      variable in your string, and get its value. The syntax is straightforward,
+      you simply wrap your variable name with a dollar sign and curly braces.</p>
+    <br>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">hello</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">`</span><span
+style="color: #c3e88d;">My name is </span><span style="color: #89ddff;">${</span><span
+style="color: #eeffff;">firstname</span><span style="color: #89ddff;">}</span><span
+style="color: #c3e88d;"> and I am </span><span style="color: #89ddff;">${</span><span
+style="color: #eeffff;">realage</span><span style="color: #89ddff;">}`</span></div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">hello</span><span
+style="color: #eeffff;">)</span><span style="color: #89ddff;">;</span><br><span
+style="color: #89ddff;"></span><div><span style="color: #89ddff;"><br></span></div></div>
+    <p>Remember that string interpolation only works with backticks. If you ever
+      try it and it doesn't work, double-check that you're using backticks
+      rather than single or double-quotes.</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">sayHello</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">firstname</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">`</span><span style="color: #c3e88d;">Hello </span><span
+style="color: #89ddff;">${</span><span style="color: #eeffff;">firstname</span><span
+style="color: #89ddff;">}`</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">sayHello</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">John</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div><br><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">getFullName</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">firstName</span><span style="color: #89ddff;">,</span><span
+style="color: #eeffff;"> </span><span style="color: #eeffff;">lastName</span><span
+style="color: #89ddff;">){</span></div><div><span style="color: #f07178;">    </span><span
+style="color: #89ddff;font-style: italic;">return</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">`${</span><span style="color: #eeffff;">firstName</span><span
+style="color: #89ddff;">}</span><span style="color: #c3e88d;"> </span><span style="color: #89ddff;">${</span><span
+style="color: #eeffff;">lastName</span><span style="color: #89ddff;">}`</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #89ddff;">}</span></div><br><div><span
+style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">getFullName</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">John</span><span
+style="color: #89ddff;">"</span><span style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">"</span><span style="color: #c3e88d;">Doe</span><span style="color: #89ddff;">"</span><span
+style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div></div>
+    <h3>Multiline Strings</h3>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">getMultilineString</span><span style="color: #89ddff;">()</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #89ddff;">    </span><span style="color: #546e7a;font-style: italic;">//move "are so powerful!" to a new line in the same string</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">`</span><span style="color: #c3e88d;">Template strings  </span></div><div><span
+style="color: #c3e88d;">&nbsp;are so powerful!</span><span style="color: #89ddff;">`</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #89ddff;">}</span></div><br><div><span
+style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">getMultilineString</span><span
+style="color: #eeffff;">())</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <h3>Capitalise words</h3>
+    <div>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <h3>Explanation</h3>
+      <p>You can think about this challenge as 3 separate small challenges:</p>
+      <ol>
+        <li>Get the first character and uppercase it</li>
+        <li>Get the rest of the string and lower case it</li>
+        <li>Merge these 2 strings together (the first character &amp; the rest
+          of the string)</li>
+      </ol>
+    </div>
+    <p></p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">capitalize</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">word</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">word</span><span style="color: #f07178;">[</span><span
+style="color: #f78c6c;">0</span><span style="color: #f07178;">]</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">toUpperCase</span><span style="color: #f07178;">() </span><span
+style="color: #89ddff;">+</span><span style="color: #f07178;"> </span><span style="color: #eeffff;">word</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">substring</span><span
+style="color: #f07178;">(</span><span style="color: #f78c6c;">1</span><span style="color: #f07178;">)</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">toLowerCase</span><span
+style="color: #f07178;">()</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">capitalize</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">john</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span><span
+style="color: #eeffff;"> </span><span style="color: #546e7a;font-style: italic;">//John</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">capitalize</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">BRAVO</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span><span
+style="color: #eeffff;"> </span><span style="color: #546e7a;font-style: italic;">//Bravo</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">capitalize</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">BLAne</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span><span
+style="color: #eeffff;"> </span><span style="color: #546e7a;font-style: italic;">//Blane<br><br></span></div></div>
+    <p></p>
+    <p>
+      <script src="/js/1.2.concatenation.js"></script> </p>
+  </body>
+</html>

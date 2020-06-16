@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Reference - Variable Scope</title>
+  </head>
+  <body>
+    <header>
+        <h1><a href="/">JavaScript Reference</a></h1>
+        <h2>Variable Scope</h2>
+    </header>
+    <p>The parameters of a function are only accessible inside that function.<br>
+      That means from the opening { until the corresponding closing }.</p>
+    <p>For example:<code><br>
+      </code></p>
+    <p><code>// number here is NOT defined</code></p>
+    <code>function double(number) {<br>
+      &nbsp;&nbsp;&nbsp; // number can only be used INSIDE this function<br>
+      &nbsp;&nbsp;&nbsp; return number * 2<br>
+      }</code>
+    <p><code>// number here is NOT defined</code></p>
+    This concept is called the scope of a variable. <br>
+    <p><strong><em>You must know that the parameter is only accessible inside
+          the function, and nowhere else.</em></strong></p>
+    <h3>Storing the result of a function</h3>
+    <p>Since functions return a result, you can in fact store that result in a
+      variable. Here's an example:<br>
+    </p>
+    <p><strong>Here we define the function that will double the parameter
+        "number"<br>
+        which is passed to it through an argument stored in a variable:</strong></p>
+    <br>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><meta
+http-equiv="content-type" content="text/html; charset=utf-8"><div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">number</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">2</span></div><div><span style="color: #89ddff;">}<br><br></span></div></div></div>
+    <p><strong>And here we store the variables with each argument:</strong></p>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>let</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">firstResult</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #82aaff;">double</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">4</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #c792ea;">let</span><span
+style="color: #eeffff;"> </span><span style="color: #eeffff;">secondResult</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">10</span><span style="color: #eeffff;">)</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <code></code><br>
+    <br>
+    Notice how we save the result of double(4) into the variable firstResult. <br>
+    The variable result now contains the result of the double(4) function call,
+    which is 8.<br>
+    So the value of firstResult is now 8.<br>
+    Similarly, the secondResult variable has the result of double(10) which is
+    20.
+    <h3> Calculate the sum of 4 and 5 and store the result in a variable called
+      <strong>total</strong>:</h3>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><meta
+http-equiv="content-type" content="text/html; charset=utf-8"><div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">sum</span><span style="color: #89ddff;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span style="color: #eeffff;">b</span><span
+style="color: #89ddff;">){</span></div><div><span style="color: #f07178;">    </span><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">+</span><span style="color: #f07178;"> </span><span
+style="color: #eeffff;">b</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">a</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">+</span><span style="color: #f07178;"> </span><span style="color: #eeffff;">b</span></div><div><span
+style="color: #f07178;">  </span><span style="color: #89ddff;">}</span></div><div><span
+style="color: #eeffff;">  </span></div><div><span style="color: #eeffff;">  </span><span
+style="color: #c792ea;">let</span><span style="color: #eeffff;"> </span><span style="color: #eeffff;">total</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">sum</span><span style="color: #eeffff;">(</span><span style="color: #f78c6c;">4</span><span
+style="color: #89ddff;">,</span><span style="color: #f78c6c;">5</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;</span></div></div><span style="color: #89ddff;"><br></span></div></div>
+    <h3></h3>
+    <p></p>
+    <script src="/js/2.1.variable-scope.js"></script>
+  </body>
+</html>

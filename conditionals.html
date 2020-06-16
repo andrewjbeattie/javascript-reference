@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Reference - Conditionals</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JavaScript Reference</a></h1>
+      <h2>Conditionals</h2>
+    </header>
+    <p>Conditionals are code structures used to test if an expression returns
+      true or not. </p>
+    <p>A very common form of conditionals is the if ... else statement. </p>
+    <p>For example: </p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">iceCream</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">chocolate</span><span style="color: #89ddff;">'</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #89ddff;font-style: italic;">if</span><span
+style="color: #eeffff;">(</span><span style="color: #eeffff;">iceCream</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">===</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">'</span><span style="color: #c3e88d;">chocolate</span><span
+style="color: #89ddff;">'</span><span style="color: #eeffff;">) </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">  </span><span style="color: #82aaff;">alert</span><span
+style="color: #f07178;">(</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Yay, I love chocolate ice cream!</span><span
+style="color: #89ddff;">'</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span><span
+style="color: #f07178;">    </span></div><div><span style="color: #89ddff;">}</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;font-style: italic;">else</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">  </span><span style="color: #82aaff;">alert</span><span
+style="color: #f07178;">(</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Awwww, but chocolate is my favourite...</span><span
+style="color: #89ddff;">'</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span><span
+style="color: #f07178;">    </span></div><div><span style="color: #89ddff;">}</span></div></div>
+    <p> </p>
+    <p>The expression inside the if( ... ) is the test.<br>
+      This uses the identity operator (as described above) to compare the
+      variable iceCream<br>
+      with the string chocolate to see if the two are equal. If this comparison
+      returns true,<br>
+      the first block of code runs. If the comparison is not true, the second
+      block of<br>
+      code—after the else statement—runs instead.</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">drink</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">kefir</span><span style="color: #89ddff;">'</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #89ddff;font-style: italic;">if</span><span
+style="color: #eeffff;">(</span><span style="color: #eeffff;">drink</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">!==</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">'</span><span style="color: #c3e88d;">kefir</span><span
+style="color: #89ddff;">'</span><span style="color: #eeffff;">) </span><span style="color: #89ddff;">{</span></div><br><div><span
+style="color: #f07178;">    </span><span style="color: #82aaff;">alert</span><span
+style="color: #f07178;">(</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Better get some probiotics into you</span><span
+style="color: #89ddff;">'</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;font-style: italic;">else</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #82aaff;">alert</span><span
+style="color: #f07178;">(</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Your ok, you like kefir</span><span
+style="color: #89ddff;">'</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}<br><br></span></div></div>
+    <p></p>
+    <p>Conditionals can use multiple variables, varying operators, properties
+      and methods as well as concatenations of strings.</p>
+    <p>Example of multiple variables with a logical operator:<code><br>
+      </code> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">drink1</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">kefir</span><span style="color: #89ddff;">'</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;">      drink2 </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">yoghurt</span><span style="color: #89ddff;">'</span></div><div><span
+style="color: #eeffff;">      drink3 </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">coffee</span><span
+style="color: #89ddff;">'</span></div><div><span style="color: #eeffff;">      drink4 </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">coca cola</span><span style="color: #89ddff;">'</span></div><br><div><span
+style="color: #eeffff;">      </span><span style="color: #89ddff;font-style: italic;">if</span><span
+style="color: #eeffff;">(</span><span style="color: #eeffff;">drink1</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">===</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">'</span><span style="color: #c3e88d;">kefir</span><span
+style="color: #89ddff;">'</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">||</span><span
+style="color: #eeffff;"> drink2 </span><span style="color: #89ddff;">===</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">yogurt</span><span
+style="color: #89ddff;">'</span><span style="color: #eeffff;">) </span><span style="color: #89ddff;">{</span></div><br><div><span
+style="color: #f07178;">      </span><span style="color: #82aaff;">alert</span><span
+style="color: #f07178;">(</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">That is great your drinking a probiotic</span><span
+style="color: #89ddff;">'</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">      </span><span style="color: #89ddff;">}</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;font-style: italic;">else</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">        </span><span style="color: #82aaff;">alert</span><span
+style="color: #f07178;">(</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Your not drinking a probiotic, shame on you</span><span
+style="color: #89ddff;">'</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">      </span><span style="color: #89ddff;">}<br><br></span></div></div>
+    <p>Implement a function canVote that returns true whenever the age is bigger
+      than or equal to 18</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #eeffff;">      </span><span style="color: #c792ea;">function</span><span
+style="color: #eeffff;"> </span><span style="color: #82aaff;">canVote</span><span
+style="color: #89ddff;">(</span><span style="color: #eeffff;">age</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">        </span><span style="color: #89ddff;font-style: italic;">if</span><span
+style="color: #f07178;"> (</span><span style="color: #eeffff;">age</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">&gt;=</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">18</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">            </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #ff9cac;">true</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">        </span><span style="color: #89ddff;">}</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;">}</span></div><div><span
+style="color: #eeffff;">    </span></div></div>
+    <p id="challenge-description">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      Implement a function <strong>canVote</strong> that returns true whenever
+      the age is bigger than or equal to 18 and returns false in other
+      scenarios.</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #eeffff;">    </span><span style="color: #c792ea;">function</span><span
+style="color: #eeffff;"> </span><span style="color: #82aaff;">canVote</span><span
+style="color: #89ddff;">(</span><span style="color: #eeffff;">age</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">      </span><span style="color: #89ddff;font-style: italic;">if</span><span
+style="color: #f07178;"> (</span><span style="color: #eeffff;">age</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">&gt;=</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">18</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">          </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #ff9cac;">true</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">      </span><span style="color: #89ddff;">}</span><span
+style="color: #89ddff;font-style: italic;">else</span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">          </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #ff9cac;">false</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #f07178;">      </span><span
+style="color: #89ddff;">}</span></div><div><span style="color: #f07178;">  </span><span
+style="color: #89ddff;">}</span></div><div><span style="color: #eeffff;">  </span></div></div>
+    <p></p>
+    <p></p>
+    <script src="/js/1.6.conditionals.js"></script>
+  </body>
+</html>

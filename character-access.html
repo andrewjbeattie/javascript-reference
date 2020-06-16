@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Reference - Character Access</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JavaScript Reference</a></h1>
+      <h2>Character Access</h2>
+      <script src="/js/2.3.character-access.js"></script> </header>
+    <p>You can access a specific character in a string by using the square
+      brackets syntax [].</p>
+    <p>You have to provide the index of the character that you'd like to access,
+      starting from 0.</p>
+    <p>Let's take an example where the variable language has the value:
+      "JavaScript". Here's how you access the 1st character, the 2nd, and the
+      3rd:</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #eeffff;">language[</span><span style="color: #f78c6c;">0</span><span
+style="color: #eeffff;">]</span><span style="color: #89ddff;">;</span><span style="color: #eeffff;"> </span><span
+style="color: #546e7a;font-style: italic;">//first character</span></div><div><span
+style="color: #eeffff;">language[</span><span style="color: #f78c6c;">1</span><span
+style="color: #eeffff;">]</span><span style="color: #89ddff;">;</span><span style="color: #eeffff;"> </span><span
+style="color: #546e7a;font-style: italic;">//second character</span></div><div><span
+style="color: #eeffff;">language[</span><span style="color: #f78c6c;">2</span><span
+style="color: #eeffff;">]</span><span style="color: #89ddff;">;</span><span style="color: #eeffff;"> </span><span
+style="color: #546e7a;font-style: italic;">//third character</span></div></div>
+    <p></p>
+    <p>You can debug it in the console as:</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(language[</span><span
+style="color: #f78c6c;">1</span><span style="color: #eeffff;">])</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <h3>Combining it with length</h3>
+    <p>You can also combine the character access with the .length property. So
+      using the same language variable, here's how you get the second to last
+      character from it:</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>language[ language</span><span style="color: #89ddff;">.</span><span
+style="color: #eeffff;">length </span><span style="color: #89ddff;">-</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">2</span><span style="color: #eeffff;"> ]</span><span
+style="color: #89ddff;">;</span><span style="color: #eeffff;"> </span><span style="color: #546e7a;font-style: italic;">// "p" because it's the second to last character from "JavaScript"<br><br></span></div></div>
+    <p>Note that language[ language.length ] will be undefined because character
+      access starts at 0.<br>
+      So for a string of 9 characters, 8 is the position of the last character.</p>
+    <h3>Substrings</h3>
+    <p>Substring signature<br>
+      <br>
+      A function signature gives you an explanation of the parameters that you
+      need to pass for that method. Let's take a look at the signature of
+      substring:<br>
+      <br>
+      <code>//Signature:<br>
+        substring(indexStart, indexEnd)</code><br>
+      <br>
+      This means that when you call substring, you can give it 2 parameters, the
+      first one for the indexStart and the second one for indexEnd.<br>
+      <br>
+      &nbsp;&nbsp;&nbsp; <code>indexStart:</code> the position of the first
+      character you'd like to include<br>
+      &nbsp;&nbsp;&nbsp; <code>indexEnd:</code> the position of the first
+      character you'd like to ignore<br>
+      <br>
+      This means an indexEnd of 5, will only include up to character 4.<br>
+      <br>
+      The combination of these 2 will give you a substring.</p>
+    <h3>Optional parameters</h3>
+    <p>The indexEnd parameter is optional, which means you can simply pass the
+      indexStart and it'll assume the indexEnd to be the same as the string
+      length. Here's an example:</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">skipFirstCharacter</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">name</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">  </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">name</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">substring</span><span style="color: #f07178;">(</span><span
+style="color: #f78c6c;">1</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #546e7a;font-style: italic;">//sample usage</span></div><div><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">skipFirstCharacter</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">"</span><span style="color: #c3e88d;">Iamsterdam</span><span
+style="color: #89ddff;">"</span><span style="color: #eeffff;">))</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;"><br></span></div></div>
+    <p></p>
+  </body>
+</html>

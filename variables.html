@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Reference - Variables</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JavaScript Reference</a></h1>
+      <h2>Variables</h2>
+    </header>
+    <p>Variables can be a: <em>String, Numbers, Boolean, Array, Object, null,
+        undefined</em><br>
+      <br>
+      Variables defined:<br>
+      <br>
+      <b>String:</b> This is a sequence of text known as a string. To signify
+      that the <br>
+      value is a string, enclose it in single quote marks.</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>let</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">myVariable</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">Bob</span><span style="color: #89ddff;">'</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <p> <b>Number:</b> This is a number. Numbers don't have quotes around them.
+    </p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>let</span><span style="color: #eeffff;"> myVariable</span><span
+style="color: #eeffff;"></span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">28</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <p> <b>Boolean:</b> This is a True/False value. The words true and false
+      are special keywords <br>
+      that don't need quote marks. </p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>let</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">myVariable</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #ff9cac;">true</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p> <b>Array:</b> This is a structure that allows you to store multiple
+      values in a single reference. &nbsp;&nbsp;&nbsp; </p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>let</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">myVariable</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> [</span><span style="color: #f78c6c;">1</span><span
+style="color: #89ddff;">,</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Bob</span><span
+style="color: #89ddff;">'</span><span style="color: #89ddff;">,</span><span style="color: #89ddff;">'</span><span
+style="color: #c3e88d;">Steve</span><span style="color: #89ddff;">'</span><span
+style="color: #89ddff;">,</span><span style="color: #f78c6c;">10</span><span style="color: #eeffff;">]</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <p>Refer to each member of the array like this:</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>myVariable[</span><span style="color: #f78c6c;">0</span><span
+style="color: #eeffff;">]</span><span style="color: #89ddff;">,</span><span style="color: #eeffff;"> myVariable[</span><span
+style="color: #f78c6c;">1</span><span style="color: #eeffff;">]</span><span style="color: #89ddff;">,<br><br></span></div></div>
+    <p><b><br>
+        Object:</b> This can be anything. Everything in JavaScript is an object,
+      and can be stored <br>
+      in a variable. Keep this in mind as you learn.</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">let</span><span style="color: #eeffff;"> </span><span style="color: #eeffff;">myVariable</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">document</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">querySelector</span><span style="color: #eeffff;">(</span><span
+style="color: #89ddff;">'</span><span style="color: #c3e88d;">h1</span><span style="color: #89ddff;">'</span><span
+style="color: #eeffff;">)</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <p> <em><strong><br>
+          All of the above examples too are objects. </strong></em><br>
+      <br>
+      You declare a variable with either:<br>
+      <br>
+      - <b>var</b> (old way and less recommended as is legacy and mostly
+      deprecated)<br>
+      - <b>let </b>(can be reassigned)<br>
+      - <b>const </b>(can't be initialised without a value)</p>
+    <p id="course-lesson-description" class="">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <ul>
+      <li>When you use a variable for the first time in JavaScript, you need to
+        declare it with either <code>let</code> or <code>const</code>.</li>
+      <li>Use <code>let</code> for variables that you will need to re-assign
+        later on (as in change their value)</li>
+      <li>Use <code>const</code> for variables that you won't need to re-assign
+        later on.</li>
+      <li>Variables declared with <code>const</code> are <strong>not</strong>
+        a constant.</li>
+      <li>Variables declared with <code>const</code> cannot be re-assigned so
+        you cannot have the <code>=</code> next to that variable name after
+        declaring it.</li>
+      <li>If you see <code>var</code>, it's from the old version of JavaScript.
+        You can convert it to <code>let</code> (sometimes <code>const</code>
+        if the variable is not re-assigned).</li>
+    </ul>
+    <h3>Incrementing a variable value</h3>
+    <p>Define a variable "<strong>count</strong>" inside the function <strong>defineVariable</strong>.
+      Increment it and then return its value.</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <p></p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">defineVariable</span><span style="color: #89ddff;">(){</span></div><div><span
+style="color: #89ddff;">    </span><span style="color: #546e7a;font-style: italic;">//define a variable "count" with value 0</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #c792ea;">let</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">count</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">=</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">0</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">    </span><span style="color: #546e7a;font-style: italic;">//then increment it</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #eeffff;">count</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">+=</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">1</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">    </span><span style="color: #546e7a;font-style: italic;">//finally return it</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">count</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #89ddff;">}</span></div></div>
+    <p class=""> </p>
+    <p>Notice how the variable is reassigned with "<code>let</code>". If you use
+      "<code>const</code>" to define variable the function won't work because
+      you cannot reassign it (cannot have the = sign next to that variable after
+      declaring it)</p>
+    <p id="challenge-description">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <p class=""> </p>
+    <p></p>
+    <p></p>
+    <p> </p>
+    <script src="/js/1.1.variables.js"></script>
+  </body>
+</html>

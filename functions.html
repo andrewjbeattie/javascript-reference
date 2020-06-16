@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Reference - Functions</title>
+  </head>
+  <body>
+    <header>
+        <h1><a href="/">JavaScript Reference</a></h1>
+        <h2>Functions</h2>
+    </header>
+    <p>Functions are a way of packaging functionality that you wish to reuse.<br>
+      It's possible to define a body of code as a function that executes when
+      you call<br>
+      the function name in your code. This is a good alternative to repeatedly<br>
+      writing the same code. You have already seen some uses of functions<br>
+      previously. </p>
+    <p>For example:</p>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">myMessage</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #eeffff;">document</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">querySelector</span><span
+style="color: #eeffff;">(</span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">h1</span><span
+style="color: #89ddff;">'</span><span style="color: #eeffff;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #82aaff;">alert</span><span style="color: #eeffff;">(</span><span
+style="color: #89ddff;">'</span><span style="color: #c3e88d;">hello</span><span
+style="color: #89ddff;">'</span><span style="color: #eeffff;">)<br><br></span></div></div>
+    <p>These functions, <strong><em>document.querySelector</em></strong> and <strong><em>alert</em></strong>,
+      are built into the browser.</p>
+    <p>If you see something which looks like a variable name, but it's followed
+      by<br>
+      parentheses— () —it is likely a function. Functions often take arguments:
+      bits<br>
+      of data they need to do their job. Arguments go inside the parentheses,<br>
+      separated by commas if there is more than one argument.</p>
+    <code>argument: ('h1', 'h2')</code><br>
+    <p>For example, the alert() function makes a pop-up box appear inside the
+      browser<br>
+      window, but we need to give it a string as an argument to tell the
+      function what<br>
+      message to display. You can also define your own functions. <br>
+      <br>
+      In the next example, we create a simple function which takes two numbers
+      as arguments <br>
+      and multiplies them: </p>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">a</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">30</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">      b </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">20</span><span style="color: #89ddff;">;</span></div><br><div><span
+style="color: #eeffff;">  </span><span style="color: #89ddff;font-style: italic;">if</span><span
+style="color: #eeffff;">( </span><span style="color: #eeffff;">a</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">&gt;</span><span style="color: #eeffff;"> b) </span><span
+style="color: #89ddff;">{</span></div><div><span style="color: #f07178;">    </span><span
+style="color: #82aaff;">alert</span><span style="color: #f07178;">(</span><span
+style="color: #89ddff;">'</span><span style="color: #c3e88d;">a is greater than b</span><span
+style="color: #89ddff;">'</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">}<br><br></span></div></div>
+    <p>A function is a reusable piece of code that performs some logic and gives
+      you a<br>
+      result The return keyword allows the function to give the result of its<br>
+      computation. return keyword can only be used inside a function. A
+      parameter is<br>
+      a variable that a function receives. Most functions will use that variable
+      they<br>
+      receive and will compute the result based on it. To call a function, you
+      have<br>
+      to start with its name then opening parentheses (, then the value you want
+      to<br>
+      give to the parameter and then a closing parentheses )</p>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">double</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">  </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> (</span><span style="color: #eeffff;">number</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">2</span><span style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div><div><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">double</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">5</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">double</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">10</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #82aaff;">double</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">15</span><span style="color: #eeffff;">))</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <br>
+    <br>
+    <script src="/js/1.7.functions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Reference - Parameters and Arguments</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JavaScript Reference</a></h1>
+      <h2>Parameters and Arguments</h2>
+    </header>
+    <ul>
+      <li><strong><em>Parameters</em></strong> are variables listed as a part of
+        the function definition.</li>
+      <li><strong><em>Arguments</em></strong> are values passed to the function
+        when it is invoked. </li>
+    </ul>
+    <p>Assume we've got the function triple and that we're calling that function
+      twice:</p>
+    <p> </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"> </span><meta http-equiv="content-type" content="text/html; charset=utf-8"><br><div
+style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">triple</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">number</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">number</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">3</span></div><div><span style="color: #89ddff;">}</span></div><br><div><span
+style="color: #82aaff;">triple</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">5</span><span style="color: #eeffff;">)</span></div><div><span
+style="color: #82aaff;">triple</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">10</span><span style="color: #eeffff;">)</span></div></div><span
+style="color: #89ddff;"><br></span></div></div>
+    <ul>
+      <li>The number variable is called a parameter.</li>
+      <li>The 5 that is passed to triple in triple(5) is called an argument.</li>
+      <li>The 10 that is passed to triple in triple(10) is called an argument.</li>
+    </ul>
+    <p><b>Multiple arguments</b></p>
+    <p>You can have more than 2 arguments, and the syntax is similar:</p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"> <br></span><span style="color: #c792ea;">function</span><span
+style="color: #eeffff;"> </span><span style="color: #82aaff;">sum</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">x</span><span style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">y</span><span style="color: #89ddff;">,</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">z</span><span style="color: #89ddff;">)</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">{</span></div><div><span style="color: #f07178;">  </span><span
+style="color: #eeffff;">console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span style="color: #eeffff;">x</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">+</span><span style="color: #f07178;"> </span><span
+style="color: #eeffff;">y</span><span style="color: #f07178;"> </span><span style="color: #89ddff;">+</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">z</span><span style="color: #f07178;">)</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #89ddff;">}</span></div><br><div><span
+style="color: #82aaff;">sum</span><span style="color: #eeffff;">(</span><span style="color: #f78c6c;">5</span><span
+style="color: #89ddff;">,</span><span style="color: #f78c6c;">4</span><span style="color: #89ddff;">,</span><span
+style="color: #f78c6c;">5</span><span style="color: #eeffff;">)</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <br>
+    <p><strong><em>Function parameters</em></strong> are the names listed in the
+      function definition.<strong><br>
+        <em>Function arguments</em></strong> are the real values passed to (and
+      received by) the function. </p>
+    <p><code>function myFunction(<span style="color:red;font-weight:bold;">parameter1</span>)
+        {<br>
+        &nbsp; return (parameter1 * 2);</code><br>
+      <code> }<br>
+        myFunction(<span style="color:green;font-weight:bold;">10</span>)<br>
+      </code> </p>
+    <p><span style="color:red;">Red = parameter</span><br>
+      <span style="color:green;">Green = argument</span></p>
+    <p>Here is the same function again in the console and it should return a
+      value of "20":<br>
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">myFunction</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">parameter1</span><span style="color: #89ddff;">)</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">{</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #eeffff;">console</span><span
+style="color: #89ddff;">.</span><span style="color: #82aaff;">log</span><span style="color: #f07178;">(</span><span
+style="color: #eeffff;">parameter1</span><span style="color: #f07178;"> </span><span
+style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span style="color: #f78c6c;">2</span><span
+style="color: #f07178;">)</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">parameter1</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">*</span><span style="color: #f07178;"> </span><span
+style="color: #f78c6c;">2</span></div><div><span style="color: #f07178;">  </span><span
+style="color: #89ddff;">}</span></div><div><span style="color: #eeffff;">  </span><span
+style="color: #82aaff;">myFunction</span><span style="color: #eeffff;">(</span><span
+style="color: #f78c6c;">10</span><span style="color: #eeffff;">)<br><br></span></div></div>
+    <p></p>
+    <p><b>Rules</b></p>
+    <ul>
+      <li>JavaScript function definitions do not specify data types for
+        parameters.</li>
+      <li>JavaScript functions do not perform type checking on the passed
+        arguments.</li>
+      <li>JavaScript functions do not check the number of arguments received.<br>
+      </li>
+    </ul>
+    <script src="/js/1.9.parameters-arguments.js"></script>
+  </body>
+</html>

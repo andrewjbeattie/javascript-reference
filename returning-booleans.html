@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Reference - Returning Booleans</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JavaScript Reference</a></h1>
+      <h2>Returning Booleans</h2>
+      Whenever you're returning a boolean (true or false), it's quite redundant
+      to use <code>if</code> and <code>else</code>.
+      Here's an example:<br>
+      <br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">isPassing</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">grade</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">if</span><span
+style="color: #f07178;"> (</span><span style="color: #eeffff;">grade</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">&gt;=</span><span
+style="color: #f07178;"> </span><span style="color: #f78c6c;">10</span><span style="color: #f07178;">)</span><span
+style="color: #89ddff;">{</span></div><div><span style="color: #f07178;">        </span><span
+style="color: #89ddff;font-style: italic;">return</span><span style="color: #f07178;"> </span><span
+style="color: #ff9cac;">true</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;">}</span><span style="color: #89ddff;font-style: italic;">else</span><span
+style="color: #89ddff;">{</span></div><div><span style="color: #f07178;">        </span><span
+style="color: #89ddff;font-style: italic;">return</span><span style="color: #f07178;"> </span><span
+style="color: #ff9cac;">false</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;">}</span></div><div><span
+style="color: #89ddff;">}</span></div><br><div><span style="color: #82aaff;">isPassing</span><span
+style="color: #eeffff;">(</span><span style="color: #f78c6c;">12</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;</span></div></div>
+      <br>
+      <p id="course-lesson-description" class=" ">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <span class="suggested-highlight ">This is redundant because <code>grade
+            &gt;= 10</code> on its own, returns <strong>true</strong> or <strong>false</strong>
+          depending on the grade. Which means you don't need to wrap it with an
+          if/else statement</span>.</p>
+      <p id="course-lesson-description" class=" ">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <span class="">That's why you can simply refactor it like this:</span></p>
+      <p class=" "><br>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      </p>
+      <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><br><div><span
+style="color: #c792ea;">function</span><span style="color: #eeffff;"> </span><span
+style="color: #82aaff;">isPassing</span><span style="color: #89ddff;">(</span><span
+style="color: #eeffff;">grade</span><span style="color: #89ddff;">){</span></div><div><span
+style="color: #f07178;">    </span><span style="color: #89ddff;font-style: italic;">return</span><span
+style="color: #f07178;"> </span><span style="color: #eeffff;">grade</span><span
+style="color: #f07178;"> </span><span style="color: #89ddff;">&gt;=</span><span
+style="color: #f07178;"> </span><span style="color: #f78c6c;">10</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #89ddff;">}</span></div></div>
+      <p class=" "></p>
+      <p class=" "></p>
+      <p id="course-lesson-description" class=" ">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <span class="suggested-highlight ">without using if/else which will
+          always return a boolean!</span></p>
+      <p class=" "><span class="suggested-highlight "><br>
+        </span></p>
+      <br>
+      <script src="/js/2.5.returning-booleans.js"></script> </header>
+  </body>
+</html>

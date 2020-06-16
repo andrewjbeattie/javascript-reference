@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Reference - Operators</title>
+  </head>
+  <body>
+    <header>
+        <h1><a href="/">JavaScript Reference</a></h1>
+        <h2>Operators</h2>
+    </header>
+    <p>An operator is a mathematical symbol which produces a result based on two
+      values (or variables).</p>
+    <p> <b>Assignment</b>: This assigns a value to a variable.</p>
+    <p>Symbol: = </p>
+    <p> <code>let myVariable = 'Bob';</code></p>
+    <p> <b>Addition:</b> Add two numbers together or combine two strings.</p>
+    <p>Symbol: + &nbsp;&nbsp; &nbsp;</p>
+    <p> <code>6 + 9; 'Hello ' + 'world!';</code></p>
+    <p> <b>Subtraction, Multiplication, Division:</b> These do what you'd
+      expect them to do in basic math.</p>
+    <p>Symbols: -, *, /</p>
+    <p><code>9 - 3; 8 * 2; 9 / 3;</code></p>
+    <p> <b>Equality:</b> This performs a test to see if two values are equal.
+      It returns a true/false (Boolean) result.</p>
+    <p>Symbol: === </p>
+    <p><code>let myVariable = 3; myVariable === 4;</code></p>
+    <p><b>Not:</b> This returns the logically opposite value of what it
+      precedes. It turns a true into a false, etc.. </p>
+    <p>Symbol: !</p>
+    <p><code>let myVariable = 3;<br>
+        !(myVariable === 3);</code></p>
+    <p>For "Not", the basic expression is true, but the comparison returns false
+      because we negate it.</p>
+    <p><b>Does-not-equal: </b>When "not" (!) is used alongside the Equality
+      operator (==), the negation operator tests whether two values are not
+      equal. </p>
+    <p>Symbol: !== </p>
+    <code>let myVariable = 3;<br>
+      myVariable !== 3; </code><br>
+    <p> <em>"Does-not-equal" gives basically the same result with different
+        syntax.<br>
+        Here we are testing "is myVariable NOT equal to 3".<br>
+        This returns false because myVariable IS equal to 3</em></p>
+    <h3><em>Examples in console<br>
+      </em></h3>
+    <p> </p>
+    <p>// Assignment</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">firstnumber</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #f78c6c;">8</span><span
+style="color: #89ddff;">;</span></div><div><span style="color: #eeffff;">      secondnumber </span><span
+style="color: #89ddff;">=</span><span style="color: #eeffff;"> </span><span style="color: #f78c6c;">6</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p> </p>
+    <p> // Addition</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">firstnumber</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">+</span><span style="color: #eeffff;"> secondnumber)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <p> </p>
+    <p> // Subtraction</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">firstnumber</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">-</span><span style="color: #eeffff;"> secondnumber)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <p> </p>
+    <p> // Multiplication</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">firstnumber</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">*</span><span style="color: #eeffff;"> secondnumber)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <p> </p>
+    <p> // Division</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">firstnumber</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">/</span><span style="color: #eeffff;"> secondnumber)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <p> </p>
+    <p> // Equality - should return true or false</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">firstnumber</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">===</span><span style="color: #eeffff;"> secondnumber)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <p> </p>
+    <p> // Not - is a number other than 0, the result is false.</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #89ddff;">!</span><span
+style="color: #eeffff;">firstnumber</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <p> </p>
+    <p> // Does not equal</p>
+    <p> </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">firstnumber</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">!==</span><span style="color: #f78c6c;">3</span><span
+style="color: #eeffff;">)</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <p></p>
+    <script src="/js/1.3.operators.js"></script>
+  </body>
+</html>

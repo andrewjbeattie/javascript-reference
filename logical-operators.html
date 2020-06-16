@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Reference - Logical Operators</title>
+  </head>
+  <body>
+    <header>
+        <h1><a href="/">JavaScript Reference</a></h1>
+        <h2>Logical Operators</h2>
+    </header>
+    <p>JavaScript provides three logical operators:</p>
+    <ul>
+      <li>! (Logical NOT)</li>
+      <li>|| (Logical OR)</li>
+      <li>&amp;&amp; (Logical AND) </li>
+    </ul>
+    <p>The logical AND (&amp;&amp;) operator (logical conjunction) for a set of
+      operands is true if and <br>
+      only if all of its operands are true. It is typically used with Boolean
+      (logical) values. <br>
+      When it is, it returns a Boolean value. However, the &amp;&amp; operator
+      actually returns the <br>
+      value of one of the specified operands, so if this operator is used with
+      non-Boolean values,<br>
+      it will return a non-Boolean value.</p>
+    <h3>Examples of AND</h3>
+    <p>AND - The result of the &amp;&amp; operator is true only if both values
+      are true, otherwise, it is false.</p>
+    <p>First define the variables:<br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #c792ea;"><br>const</span><span style="color: #eeffff;"> </span><span
+style="color: #eeffff;">a</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">3</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">      b </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">6</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">      day1 </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Monday</span><span
+style="color: #89ddff;">'</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">      day2 </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">'</span><span style="color: #c3e88d;">Tuesday</span><span
+style="color: #89ddff;">'</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">      m </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">5</span><span style="color: #89ddff;">;</span></div><div><span
+style="color: #eeffff;">      p </span><span style="color: #89ddff;">=</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">5</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <p>AND - should return false because "b" is not greater than 7 but "a" is
+      greater than 3.<br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">&gt;</span><span style="color: #eeffff;"> </span><span
+style="color: #f78c6c;">0</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">&amp;&amp;</span><span
+style="color: #eeffff;"> b </span><span style="color: #89ddff;">&gt;</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">0</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p>AND - should return false<br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">&gt;</span><span style="color: #eeffff;"> </span><span
+style="color: #f78c6c;">2</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">&amp;&amp;</span><span
+style="color: #eeffff;"> b </span><span style="color: #89ddff;">&gt;</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">7</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p>AND - should return true - neither are equal<br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">==</span><span style="color: #eeffff;"> b </span><span
+style="color: #89ddff;">&amp;&amp;</span><span style="color: #eeffff;"> day1 </span><span
+style="color: #89ddff;">==</span><span style="color: #eeffff;"> day2)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p> AND - should return false because although x is equal to y,&nbsp; a is
+      not equal to b</p>
+    <p>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(m </span><span
+style="color: #89ddff;">==</span><span style="color: #eeffff;"> p </span><span style="color: #89ddff;">&amp;&amp;</span><span
+style="color: #eeffff;"> </span><span style="color: #eeffff;">a</span><span style="color: #eeffff;"> </span><span
+style="color: #89ddff;">==</span><span style="color: #eeffff;"> b)</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <p><code></code>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <p></p>
+    <h3>Examples of OR</h3>
+    <p>OR - JavaScript uses the double pipe || to represent the logical OR
+      operator. </p>
+    <p>You can apply the || operator to two values of any types:<br>
+      <br>
+      OR - should return true, because at least one value fulfils the logic<br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">&gt;</span><span style="color: #eeffff;"> </span><span
+style="color: #f78c6c;">2</span><span style="color: #eeffff;"> </span><span style="color: #89ddff;">||</span><span
+style="color: #eeffff;"> m </span><span style="color: #89ddff;">&gt;</span><span
+style="color: #eeffff;"> </span><span style="color: #f78c6c;">6</span><span style="color: #eeffff;">)</span><span
+style="color: #89ddff;">;<br><br></span></div></div>
+    <p>OR - should return false because none of the values fulfil the logic<br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(m </span><span
+style="color: #89ddff;">&gt;</span><span style="color: #eeffff;"> </span><span style="color: #f78c6c;">6</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">||</span><span style="color: #eeffff;"> b </span><span
+style="color: #89ddff;">&lt;</span><span style="color: #eeffff;"> </span><span style="color: #f78c6c;">3</span><span
+style="color: #eeffff;">)</span><span style="color: #89ddff;">;</span><br>    <span
+style="color: #89ddff;"></span></div></div>
+    <p> OR - should return true as one of the variables fulfils the logic<br>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </p>
+    <div style="color: #eeffff;background-color: #263238;font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;"><div><span
+style="color: #eeffff;"><br>console</span><span style="color: #89ddff;">.</span><span
+style="color: #82aaff;">log</span><span style="color: #eeffff;">(</span><span style="color: #eeffff;">a</span><span
+style="color: #eeffff;"> </span><span style="color: #89ddff;">!==</span><span style="color: #eeffff;"> b </span><span
+style="color: #89ddff;">||</span><span style="color: #eeffff;"> m </span><span style="color: #89ddff;">!==</span><span
+style="color: #eeffff;"> p)</span><span style="color: #89ddff;">;<br><br></span></div></div>
+    <p><br>
+    </p>
+    <script src="/js/1.4.logical-operators.js"></script>
+  </body>
+</html>
